@@ -65,7 +65,7 @@ def getFileType(s):
 def countCodeLine(s):
     try:
         #打开文件
-        fh = open(s,'rb')
+        fh = open(s)
         #统计文件行数
         lines = len(fh.readlines())
         #关闭文件
