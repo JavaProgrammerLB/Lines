@@ -20,7 +20,6 @@ def countFileType(lis):
             fileType = getFileType(filename)
             numCodeLines =  countCodeLine(filename)
             if fileType in d:
-                print(type(d2[fileType]))
                 if d[fileType] == None:
                     pass
                 else:
