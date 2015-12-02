@@ -18,12 +18,8 @@ def countFileType(lis):
         try:
             #print("dubug2")
             fileType = getFileType(filename)
-            #print('{}的文件类型为{}'.format(filename,fileType))
             numCodeLines =  countCodeLine(filename)
-            print("{}文件的代码行数为：{}".format(filename,numCodeLines))
             if fileType in d:
-                print('d的值为{}'.format(d[fileType]!=None))
-                print('d2的值为{}'.format(d2[fileType]!=None))
                 print(type(d2[fileType]))
                 if d[fileType] == None:
                     pass
@@ -42,8 +38,6 @@ def countFileType(lis):
     else:
         dList = list(d.keys())
         d2List = list(d2.keys())
-        print(d)
-        print(d2)
         for i in range(len(dList)):
             val = d[dList[i]]
             val2 = d2[d2List[i]]
