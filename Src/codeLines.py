@@ -49,7 +49,7 @@ def getFileType(s):
             if(s[i] == '.'):
                 return s[i:]
         else:
-            return 'unkown'
+            return 'unknown'
     else:
         print('{}文件在获取文件类型的时候出错'.format(s))
         raise ValueError('fileName类型为{}错误，应该为str'.format(type(str)))
